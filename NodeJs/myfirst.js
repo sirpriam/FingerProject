@@ -13,4 +13,9 @@ http.createServer(function(req, res){
     if (err) throw err;
     console.log('Replaced!');
   });
+
+  fs.appendFile('mynewfile1.txt','tested',function(err){
+    if (err) throw err;
+    console.log('Appended!');
+  });
 }).listen(3000);
