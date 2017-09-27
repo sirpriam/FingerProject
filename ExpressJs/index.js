@@ -52,7 +52,7 @@ app.get('/things', function(req, res){
 });
 */
 
-/*
+
 //First middleware before response is sent
 app.use(function(req, res, next){
   console.log("Start");
@@ -70,8 +70,9 @@ app.use('/',function(req,res){
   console.log('End');
 });
 
-*/
 
+
+/*
 //third party middleware
 var bodyParser = require('body-parser');
 
@@ -80,5 +81,5 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 //to parse json data
 app.use(bodyParser.json());
-
+*/
 app.listen(3000);
