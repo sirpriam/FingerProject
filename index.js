@@ -73,6 +73,7 @@ app.use('/',function(req,res){
 
 
 /*
+
 //third party middleware
 var bodyParser = require('body-parser');
 
@@ -82,4 +83,9 @@ app.use(bodyParser.urlencoded({extended: false}));
 //to parse json data
 app.use(bodyParser.json());
 */
-app.listen(3000);
+
+app.set('port', (process.env.PORT || 5000));
+
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
