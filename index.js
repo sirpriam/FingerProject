@@ -21,7 +21,7 @@ app.use(function(req, res, next){
 
 //Route handler
 app.get('/', function(req, res, next){
-  res.send("Middle");
+  res.send("Middle Testing");
   next();
 });
 
